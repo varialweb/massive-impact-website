@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "form-data": "^4.0.0",
     "gsap": "^3.12.2",
+    "mailgun.js": "^9.3.0",
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18"

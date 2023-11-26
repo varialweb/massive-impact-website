@@ -7,7 +7,7 @@ import _ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false)
-  const [send, setSent] = useState(false)
+  const [sent, setSent] = useState(false)
 
   useEffect(() => {
     gsap.registerPlugin(_ScrollTrigger)
@@ -28,7 +28,7 @@ export default function ContactForm() {
 
   function handleSubmit(event) {
     event.preventDefault()
-
+    const { name, email, phone, business, comments } = event.target
     setLoading(true)
 
     fetch('/api/contact', {
@@ -37,13 +37,19 @@ export default function ContactForm() {
       },
       method: 'POST',
       body: JSON.stringify({
-
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        business: business.value,
+        comments: comments.value,
       })
     })
     .then(response => response.json())
     .then(response => {
       if (response.success) setSent(true)
 
+      // console.log(response)
+      setSent(true)
       setLoading(false)
     })
     .catch(error => {
@@ -100,12 +106,23 @@ export default function ContactForm() {
         <textarea
           id="comments"
           name="comments"
-          placeholder="My Biz LLC"
+          placeholder="I’m ready to change my life by..."
           rows="4"
         />
       </div>
-      <button className="text-white bg-massive-orange-500 p-4 w-full text-xl font-semibold flex gap-1.5 items-center justify-center mt-4 rounded-[1px]">
-        Create friendship <img src="/img/link-arrow-white.svg" alt="" width="24" />
+      <button 
+        disabled={loading || sent}
+        className="text-white bg-massive-orange-500 disabled:bg-massive-blue-800 p-4 w-full text-xl font-semibold flex gap-1.5 items-center justify-center mt-4 rounded-[1px]"
+      >
+        {sent ? (
+         'Successfully sent!'
+        ) : (
+          loading ? (
+            <>Sending <img src="/img/loading.svg" alt="" height="24" className="animate-spin invert" /></>
+          ) : (
+            <>Create friendship <img src="/img/link-arrow-white.svg" alt="" width="24" /></>
+          )
+        )}
       </button>
     </form>
   )
