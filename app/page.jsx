@@ -210,7 +210,7 @@ export default function Home() {
       style={{
         backgroundImage: 'url("https://media.benjaminjohn.net/images/home-images/meteor-image")',
         backgroundPosition: 'top',
-        backgroundSize: 'cover',
+        backgroundSize: 'cover, 100%',
         backgroundAttachment: 'fixed',
       }}
     >
