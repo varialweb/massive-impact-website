@@ -32,6 +32,7 @@ export async function POST(request) {
         <p>Name: ${body.name}</p>
         <p>Email: ${body.email}</p>
         <p>Phone: ${body.phone}</p>
+        <p>Business: ${body.business}</p>
         <p>Questions/Comments: ${body.comments}</p>
       `
   }
