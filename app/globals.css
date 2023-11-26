@@ -2,26 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* html, body {
+  width: 100vw;
+  max-width: 100vw;
+} */
+
+@layer base {
+
+  html { 
+    @apply text-[17px] leading-[26px] text-massive-blue-800 font-['League_Spartan'] font-light; 
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* p, ul {
+    @apply text-massive-blue-800;
+  } */
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold font-['Inter'];
+  }
+
+  h1, h2 {
+    @apply text-[35px] leading-[42px] lg:text-[42px] lg:leading-[55px];
+  }
+
+  h3 {
+    @apply text-[29px] leading-[35px] lg:text-[35px] lg:leading-[42px];
+  }
+
+  h4 {
+    @apply text-[24px] leading-[29px] lg:text-[29px] lg:leading-[35px];
+  }
+
+  h5 {
+    @apply text-[20px] leading-[24px] lg:text-[24px] lg:leading-[29px];
+  }
+
+  h6 {
+    @apply text-[17px] leading-[20px] lg:text-[20px] lg:leading-[24px];
+  }
+
+  /* p {
+    @apply text-justify max-w-[70ch] text-[17px] leading-[26px] md:text-[20px] md:leading-[30px];
+  } */
+
+  p, a {
+    /* @apply text-justify text-[17px] leading-[26px] lg:text-[20px] lg:leading-[30px] max-w-[80ch]; */
+    @apply text-justify text-[17px] lg:text-[20px] leading-normal max-w-[80ch];
+  }
+
+  img {
+    @apply max-w-[100vw];
+  }
+
+  label, input, textarea {
+    @apply block;
+  }
+
+  input, textarea {
+    @apply border border-massive-blue-500 w-full p-3 rounded-[1px] text-lg focus:outline-4 focus:outline-massive-orange-500;
+  }
 }
