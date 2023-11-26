@@ -207,12 +207,14 @@ export default function Home() {
 
   return (
     <div
+      id="hero-background"
       style={{
-        backgroundImage: 'url("https://media.benjaminjohn.net/images/home-images/meteor-image")',
+        // backgroundImage: 'url("https://media.benjaminjohn.net/images/home-images/meteor-image?w=1920")',
         backgroundPosition: 'top',
         backgroundSize: 'cover, 100%',
         backgroundAttachment: 'fixed',
       }}
+      // className="[background-image]:[url('/img/meteor-image-2264w.jpg')]"
     >
       <Nav darkMode={true} />
       <main>

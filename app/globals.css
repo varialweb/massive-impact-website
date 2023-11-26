@@ -11,6 +11,22 @@
   max-width: 100vw;
 } */
 
+#hero-background {
+  background-image: url("https://media.massiveimpact.net/images/home-images/meteor-image?w=750");
+}
+
+@media (min-width: 768px) {
+  #hero-background {
+    background-image: url("https://media.massiveimpact.net/images/home-images/meteor-image?w=1600");
+  }
+}
+
+@media (min-width: 1280px) {
+  #hero-background {
+    background-image: url("https://media.massiveimpact.net/images/home-images/meteor-image");
+  }
+}
+
 @layer base {
 
   html { 
