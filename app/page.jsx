@@ -236,7 +236,7 @@ function Hero() {
         background: 'linear-gradient(hsl(228, 80%, 8%, 55%) 0%, hsl(228, 60%, 15%, 55%) 12%, hsl(227, 54%, 30%, 65%) 30%, hsl(228, 45%, 58%, 75%) 50%, hsl(228, 35%, 69%, 80%) 60%, hsl(228, 25%, 79%, 90%) 72%, hsl(227, 20%, 90%, 95%) 85%, #FFFFFF 95%)'
       }}
       // bg-gradient-to-b from-[#040B25aa] from-10% via-[#132777cc] via-60%  to-white
-      className="grid place-items-center p-3 py-16 pt-24 md:pt-32 lg:pt-48 2xl:pt-60 md:px-8 lg:px-12   2xl:pb-[60px] relative -top-20 -mb-[88px] md:-top-48 md:-mb-[208px] lg:-top-40 lg:-mb-[204px] xl:-top-48 xl:-mb-[248px] z-10 max-w-[100vw]"
+      className="grid place-items-center p-3 py-16 pt-24 md:pt-32 lg:pt-48 2xl:pt-60 md:px-8 lg:px-12   2xl:pb-[60px] relative -top-20 -mb-[92px] md:-top-48 md:-mb-[208px] lg:-top-40 lg:-mb-[204px] xl:-top-48 xl:-mb-[248px] z-10 max-w-[100vw]"
     >
       {/* <div id="hero-content" className="flex flex-col md:flex-row justify-center items-center"> */}
       <div id="hero-content" className="grid md:grid-cols-[auto_auto] justify-center items-center place-items-center">
