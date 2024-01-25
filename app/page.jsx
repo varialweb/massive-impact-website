@@ -6,6 +6,7 @@ import gsap from 'gsap'
 import _ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import ContactForm from "./ContactForm";
+import { InlineWidget, PopupButton, PopupModal } from "react-calendly";
 
 export default function Home() {
   useEffect(() => {
@@ -373,12 +374,12 @@ function Businesses() {
             </p>
             <ul className="list-disc w-full list-outside pl-3.5">
               <li>Create long-term friendships</li>
-              <li>Increase inner strength and physical fitness</li>
-              <li>Experience and learn about 100% plant-based diet</li>
-              <li>Receive 24/7 access to health resources</li>
-              <li>Reach your optimal health</li>
-              <li>Shatter your illusions and perceived limits</li>
-              <li>Massive mindset development</li>
+              <li>Transform your communication</li>
+              <li>Increase your spousal love and communication</li>
+              <li>Increase your energy awareness</li>
+              <li>Convert negative energy in a healthy way</li>
+              <li>Bring out the superhero parent within you</li>
+              <li>Understand and rebuild relationships with your child</li>
             </ul>
         </div>
       </div>
@@ -419,6 +420,7 @@ function ContactBen() {
     <section className="bg-white bg-opacity-0 p-3 pb-12 md:pb-16 md:px-16 py-8 md:py-12 relative grid items-center gap-8 -mb-1">
       <img id="contact-ben" src="https://media.benjaminjohn.net/images/home-images/contact-ben" alt="" width="275" className="relative z-[9] -mb-60 mx-auto md:w-[325px] xl:-mb-0 xl:absolute xl:right-0 xl:-bottom-8 2xl:right-32 3xl:right-[300px]" />
       <ContactForm />
+      {/* <InlineWidget url="https://calendly.com/massivemeetup" /> */}
       <div 
         style={{
           clipPath: 'polygon(0% 0%, 100% 0%, 100% 40%, 0% 20%)',

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import gsap from 'gsap'
 import _ScrollTrigger from "gsap/ScrollTrigger";
+import { InlineWidget } from "react-calendly";
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false)
@@ -65,7 +66,9 @@ export default function ContactForm() {
       style={{ borderImage: 'linear-gradient(185deg, #142878 40%,#FF5E00 60%) 1'}} className="w-full max-w-[784px] mx-auto p-4 py-8 md:p-8 border-4 grid gap-5 relative z-10 bg-white"
     >
       <h2 className="text-center">Let's Start a <span className="text-massive-orange-500">Friendship</span></h2>
-      <div className="grid gap-0.5">
+      <InlineWidget url="https://calendly.com/massivemeetup" />
+      
+      {/* <div className="grid gap-0.5">
         <label htmlFor="name" className="font-['League_Spartan'] font-semibold text-xl">Name*</label>
         <input 
           id="name"
@@ -123,7 +126,7 @@ export default function ContactForm() {
             <>Create friendship <img src="/img/link-arrow-white.svg" alt="" width="24" /></>
           )
         )}
-      </button>
+      </button> */}
     </form>
   )
 }
