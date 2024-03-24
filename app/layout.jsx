@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/img/massive-impact-icon-white.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={''.toString()}/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=League+Spartan:wght@300&family=Square+Peg&display=swap" rel="stylesheet" />

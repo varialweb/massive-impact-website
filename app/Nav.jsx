@@ -73,7 +73,13 @@ export default function Nav({ darkMode = false }) {
       <img 
         src={darkMode ? '/img/massive-impact-logo-v8-white.svg' : '/img/massive-impact-logo-v8.svg'}
         width="80"
-        className="md:w-[150px] lg:w-[150px]"
+        className="md:w-[150px] lg:w-[150px] hidden lg:block"
+      />
+      <img 
+        src="/img/massive-impact-icon-white.svg"
+        alt=""
+        width="60"
+        className="lg:hidden"
       />
       <button
         onClick={() => setOpen(!open)}
@@ -89,12 +95,23 @@ export default function Nav({ darkMode = false }) {
       <NavLinks darkMode={darkMode} className="hidden xl:flex justify-self-end" />
       <div id="mobile-nav" className="w-5/6 h-screen absolute top-0 -left-[100vw] xl:hidden flex">
         <div id="inner-mobile-nav" className="w-full h-screen flex flex-col gap-4 md:gap-6 bg-white p-3 md:p-8 shadow-lg">
-          <img 
+          {/* <img 
           src={"/img/massive-impact-logo-v8.svg"}
           alt=""
           width="80"
           className="md:w-[150px] lg:w-[400px] 2xl:w-[500px] h-auto"
-        />
+        /> */}
+        <img 
+        src={darkMode ? '/img/massive-impact-logo-v8-white.svg' : '/img/massive-impact-logo-v8.svg'}
+        width="80"
+        className="md:w-[150px] lg:w-[150px] hidden lg:block"
+      />
+      <img 
+        src="/img/massive-impact-icon-white.svg"
+        alt=""
+        width="60"
+        className="lg:hidden"
+      />
           <NavLinks className="flex flex-col" />
         </div>
         {/* <button

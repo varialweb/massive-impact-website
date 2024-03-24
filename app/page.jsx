@@ -331,8 +331,11 @@ function Businesses() {
       <img id="abstract-side-bar-left" src="/img/abstract-side-bar.png" alt="" width="154" className="absolute -left-0.5 rotate-180 h-auto w-[6vw] top-[30%] hidden 2xl:block" />
       <div className="flex flex-col xl:grid xl:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
         <div id="business-card" style={{ borderImage: 'linear-gradient(#0eade0, #132777) 1'}} className="p-6 border-4 w-full max-w-[360px] h-full grid gap-5 items-center justify-items-center">
-            <img src="/img/business.svg" />
-            <h3>Business</h3>
+            <img 
+              src="/img/massive-impact-logo-business.svg" 
+              width="280"
+            />
+            <h3 className="hidden">Business</h3>
             <p>
               Whether you are an entrepreneur, business owner, or professional, I can help guide you on key areas to foster your personal growth and achievement.
             </p>
@@ -350,8 +353,8 @@ function Businesses() {
         {/* <div className="p-2 bg-gradient-to-b from-[#0DC114] to-[#132777] to-70% w-full max-w-[355px]"> */}
         <div id="health-card" style={{ borderImage: 'linear-gradient(#0dc114, #132777) 1'}} className="p-6 border-4 w-full max-w-[360px] h-full grid gap-5 items-center justify-items-center">
 
-            <img src="/img/health-and-strength.svg" />
-            <h3 className="text-center">Health & Strength</h3>
+            <img src="/img/massive-impact-logo-health.svg" width="280" className="mx-auto justify-self-center ml-5" />
+            <h3 className="text-center hidden">Health & Strength</h3>
             <p>
               Learning to care for your health includes the body, mind, and soul. I can give you real tools to elevate your health and longevity.
             </p>
@@ -367,8 +370,8 @@ function Businesses() {
         </div>
         {/* <div className="p-2 bg-gradient-to-b from-[#5B18B0] to-[#132777] w-full max-w-[355px]"> */}
         <div id="relationships-card" style={{ borderImage: 'linear-gradient(#5b18b0, #132777) 1'}} className="p-6 border-4 w-full max-w-[360px] h-full grid gap-5 items-center justify-items-center">
-            <img src="/img/relationships.svg" />
-            <h3 className="text-center">Relationships</h3>
+            <img src="/img/massive-impact-logo-relationships.svg" width="280" />
+            <h3 className="text-center hidden">Relationships</h3>
             <p>
               How we interact makes an impact. I can show you strategies to protect your energy and communicate to the people you love that you care.
             </p>
